@@ -28,7 +28,7 @@ public class KafkaSpout extends BaseRichSpout {
 
     @Override
     public void declareOutputFields(OutputFieldsDeclarer declarer) {
-        declarer.declare(new Fields("value"));
+        declarer.declare(new Fields("json"));
     }
 
     @Override
